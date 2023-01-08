@@ -1,0 +1,52 @@
+/* Import font by googlefonts */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap');
+
+/* Custom settings with variables */
+:root{
+    --primary: #0d6efd;
+    --secondary: #21252f;
+    --body: #888;
+    --boxShadow: 0 8px 22px rgba(0,0,0,0.01);
+}
+
+/* Styles global */
+body{
+    font-family:'Sora', sans-serif;
+    line-height: 1.7;
+    color: var(--body);
+}
+
+h1,h2,h3,h4,h5,h6,.display-4{
+    color: #21252f;
+}
+
+a{
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+.navbar .logo{
+    width: 18rem;
+}
+
+.hero{
+    background-image: url(../imgs/cover.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    position: relative;
+    z-index: 2;
+}
+
+.hero::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: rgba(21, 20,51, 0.8);
+}
