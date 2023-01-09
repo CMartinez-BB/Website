@@ -87,6 +87,7 @@ section{
     color: var(--white);
     font-size: 32px;
     border-radius: 100px;
+    flex: none;
 }
 
 /* married effect in the services section */
@@ -123,4 +124,12 @@ section{
 .service:hover::after{
     opacity: 1;
     top: 0;
+}
+
+/* Col img */
+.col-img{
+    background-image: url(../imgs/cover2.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
 }
